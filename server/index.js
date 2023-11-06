@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '..', 'build')));
 app.use(fileRoute);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));npm run 
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'))
 });
 
 app.listen(3030, () => {
